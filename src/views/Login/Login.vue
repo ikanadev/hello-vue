@@ -5,10 +5,21 @@
       <p>{{ msg }}</p>
     </div>
   </div>
+  <Eye />
+  <AdminImage />
 </template>
 <script lang="ts">
-import { Vue } from 'vue-class-component';
+import { Options, Vue } from 'vue-class-component';
 
+import Eye from '@/components/icons/Eye.vue';
+import AdminImage from './AdminImage.vue';
+
+@Options({
+  components: {
+    Eye,
+    AdminImage,
+  },
+})
 export default class Login extends Vue {
   msg = 'Hello World'
 }

@@ -1,19 +1,20 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme'); // eslint-disable-line
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
   purge: [
-    './src/**/*.vue'
+    './src/**/*.vue',
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans]
-      }
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   variants: {},
   plugins: [],
-}
+};
